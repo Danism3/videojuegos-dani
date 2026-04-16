@@ -1,0 +1,272 @@
+/*Reset para que todos los elementos se muestren bien en todo tipo de navegadores*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilos generales del body*/
+body {
+    background-color: #0a0e1a ;
+    color: #e0e0e0 ;
+    font-family: sans-serif,Arial, Helvetica;
+    line-height: 1.6;
+}
+/*Estilo general de los enlaces*/
+a {
+    text-decoration: none;
+    color: #00b4d8 ;
+}
+/*Estilo general de los encabezados*/
+header {
+    background-color: #111827;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+/*Estilo especifico de la clase menu*/
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 75px ;
+}
+/*Estilo perteneciente a un enlace contenido en una lista que a su ver esta contenido en un nav, que quita el subrayado tipico de los enlaces para que sean mas esteticos*/
+nav ul li a {
+    color:#e0e0e0;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+/*Estilo que hace resaltar el enlace perteneciente a la pagina en la que estas*/
+.activo {
+    color: #00f5a0 ;
+    font-weight: bold;
+}
+/*Estilo de un section con clase .hero, se delimita el espacio y se resaltan los contenidos para que destaquen mas*/
+.hero {
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background-color: #111827;
+}
+h2 {
+    font-size: 2.5rem;
+    color: #00b4d8;
+    margin-bottom: 20px ;
+}
+/*Estilo perteneciente a un enlace que hace que se parezca a un boton*/
+.boton {
+    background-color: #00f5a0;
+    color: #0a0e1a;
+    padding: 12px 24px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/*Estilos pertenecientes al section .novedades donde se detallan estilos generales para la seccion entera y para elementos concretos dentro de ella*/
+.novedades {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+.novedades h2 {
+    width: 100%;
+    text-align: center;
+}
+.novedades article {
+    width: 250px;
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+article img {
+    width: 100%;
+    border-radius: 8px;
+}
+.novedades article img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: contain;
+    
+}
+/*Estilos pertenecientes a la section .categorias donde se utilizan los estilos para hacer que cada plaforma tenga un borde una breve descripcion*/
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.categorias h2 {
+    width: 100%;
+    text-align: center;
+}
+.categorias div {
+    width: 300px;
+    background-color: #0a0e1a ;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #00b4d8 ;
+}
+/*Estilos pertenecientes a la section por-que-elegirnos y donde se utilizan los estilos de forma parecida a la secion anterior*/
+.por-que-elegirnos {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+}
+.por-que-elegirnos div {
+    width: 300px;
+    background-color: #0a0e1a;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #00f5a0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.por-que-elegirnos h2 {
+    width: 100%;
+    text-align: center;
+}
+/*Estilos generales del footer*/
+footer {
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 100px;
+}
+footer img {
+    width: 30px;
+    height: 30px;
+}
+/*Estilos especificos de la section galeria donde se utilizan los estilos para mostrar los articles en forma de galeria*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 40px;
+}
+.galeria h2 {
+    width:  100%;
+    margin-left: 100px;
+}
+.galeria article {
+    max-width: 33%;
+    width: 300px;
+    background-color: #0a0e1a;
+    padding: 10px;
+    border-radius: 8px;  
+} 
+.galeria img {
+    aspect-ratio: 3/4;
+    object-fit: contain;
+}
+/*Estilos pertenecientes a el formulario de solicitud de ma infromacion, en los que los inputs se estilizan para que resulten mas agradables y sea mas facil la introduccion de informacion*/   
+form {
+    max-width: 80% ;
+    margin:auto ;
+    padding: 20px;
+    background-color: #111827;
+    border-radius: 8px;
+    
+}
+/*Estilo eneral perteneciente a los inputs pero con la excepcion del checkbox*/
+input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 15px;
+    background-color: #0a0e1a;
+    color: #e0e0e0;
+    border: 2px solid #00b4d8;
+    border-radius: 8px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    background-color: #0a0e1a;
+    color: #e0e0e0;
+    border: 2px solid #00b4d8;
+    border-radius: 8px;
+}
+select {
+    width: 100%;
+    padding: 15px;
+    background-color: #0a0e1a;
+    color: #e0e0e0;
+    border: 2px solid #00b4d8;
+    border-radius: 8px;
+}
+button {
+    background-color: #00f5a0;
+    color: #0a0e1a;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+.privacidad {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+main {
+    padding: 40px 20px;
+}
+/*Estilos pertenecientes a la ultima pagina de contacta con nosotros, en estos estilos se delimita el tamaño de la imagen y del otro article conteniendo el texto, se redondean las esquinas de la foto, y se separan los articles del h2*/
+.contacto {
+    padding: 20px;
+    display: flex;
+    gap: 75px;
+    
+}
+.contacto article img {
+    max-width: 100% !important;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+/*Estilos pertenecientes al ultimo article de la section .contacto */
+.contacto article:last-child {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/*Estilos pertenecientes al ultimo article de la section .contacto*/
+.contacto article:first-child {
+    width: 800px;
+    flex-shrink: 0;
+}
+/*Creacion de los hovers en los distintos botones o enlaces*/
+nav ul li a:hover {
+    color:#00f5a0;
+}
+.boton:hover {
+    background-color: #00b4d8;
+    color:#ffffff;
+}
+button:hover {
+        background-color: #00b4d8;
+        color:#e0e0e0;
+    }
